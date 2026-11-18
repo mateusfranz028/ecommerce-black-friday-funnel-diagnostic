@@ -14,7 +14,7 @@ Walkthrough Video (loom link)
 Full Article on Substack (substack link)
 
 ## Dataset & ELT Architecture
-- Data source: Public dataset (eCommerce behavior data from multi category store, by Michael Kechinov)
+- Data source: [Public dataset](https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store/data)  (eCommerce behavior data from multi category store, by Michael Kechinov)
 - Medallion Pipeline: PostgreSQL aggregation condensed 67,5M events into 16.273 rows on mart_black_friday_funnel table, daily granularity by main category, sub category and brand.
 - Star Schema: 1:* relation between Dim_Calendar table and mart_black_friday_funnel table.
 
