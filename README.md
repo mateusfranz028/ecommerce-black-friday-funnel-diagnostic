@@ -3,6 +3,27 @@ Deep analysis and diagnostic of an e-commerce comparing how the funnel performed
 
 
 
+
+
+
+
+
+
+
+## Dataset & ELT Architecture
+- Data source: Public dataset (eCommerce behavior data from multi category store, by Michael Kechinov)
+- Medallion Pipeline: PostgreSQL aggregation condensed 67,5M events into 16.273 rows on mart_black_friday_funnel table, daily granularity by main category, sub category and brand.
+- Star Schema: 1:* relation between Dim_Calendar table and mart_black_friday_funnel table.
+
+
+
+
+## Data Quality & Methodology Notes
+- Audit on purchases_without_cart proved that it represents only 1,52% (2.328 sessions) of the the total sessions. It validades the funnel's consistency.
+- The overall conversion rate on SQL is 5,58% and on Power BI it's 3,83% because the table mart_black_friday_funnel unveils sessions by brand and subcategory diluting the denominator when a user navigates between multiple brands within the same session.
+
+
+
 ## Getting Started
 - Requirements: PostgreSQL 14+ (PgAdmin) and Power BI Desktop
 - Step by step:
