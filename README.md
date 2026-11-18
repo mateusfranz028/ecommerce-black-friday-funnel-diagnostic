@@ -1,14 +1,17 @@
 # ecommerce-black-friday-funnel-diagnostic
-Deep analysis and diagnostic of an e-commerce comparing how the funnel performed during the Black Friday peak vs regular week days, across 67M+ clickstream events using PostgreSQL and Power BI.
 
 
+Deep analysis and diagnostic of a multi category e-commerce comparing how the funnel performed during the Black Friday peak vs regular week days, across 67M+ clickstream events using PostgreSQL and Power BI.
+
+Walkthrough Video (loom link)
 
 
+## Business Insights
+- The critical loss isn't at checkout (which shows a 48.38% cart-to-purchase conversion rate for the week), but rather at the top of the funnel—with only 11.54% of sessions resulting in a "view cart" action.
+- The "electronics" category ($40.55M in revenue; 9.95% add-to-cart rate) is driving the store’s performance, while "apparel" (2.67%) and "furniture" (3.05%) face significant friction on product pages.
+- Before reallocating media spend away from categories with low initial conversion, conduct an audit of price competitiveness, shipping terms, and the consistency between advertisements and their corresponding landing pages.
 
-
-
-
-
+Full Article on Substack (substack link)
 
 ## Dataset & ELT Architecture
 - Data source: Public dataset (eCommerce behavior data from multi category store, by Michael Kechinov)
